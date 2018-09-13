@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/txta"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="x^2 + "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/txtb"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="20dp"
+            android:text="x + "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/txtc"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="20dp"
+            android:text="= 0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="0.6"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:onClick="getResult"
+                android:text="Resolver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
